@@ -1,19 +1,19 @@
 
-}
-java:S1141%"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ò’ÀÊå1J$3c3cec83-ba2c-4db3-9583-b6373a0fa1b4
-®
-java:S1488s"fImmediately return this expression instead of assigning it to the temporary variable "responseReader".(–ÓšÓûÿÿÿÿ8ó’ÀÊå1J$ebd48211-e8e6-41b1-a8ff-6750ee43dcf5
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(è¦ú×8õ’ÀÊå1J$1998bdc6-f8d6-423f-9914-66d45c97a528
-’
-java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(¿ûÃ³şÿÿÿÿ8¶•ÀÊå1J$fd3bfe89-e7c5-43e1-bd2b-f879829eed39
-š
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¾³÷ùÿÿÿÿ8ï¶ÇÊå1J$e7787a1d-f804-40fb-9c47-c4a68147f317
-‚
-java:S6213!":Rename this variable to not match a restricted identifier.(Ê›õªüÿÿÿÿ8Å•ÀÊå1J$9a59ffd3-3bd2-49aa-977e-c8feaba56d8a
-c	java:S131*""Add a default case to this switch.(É­°!8Ç•ÀÊå1J$1815279f-ccc2-4304-b6c7-14a3b8737918
-r	java:S106Z"+Replace this use of System.out by a logger.(ğ¢Õîùÿÿÿÿ8Ê•ÀÊå1J$891a7af1-7cb5-4bdf-b0cc-c1a128747d2c
-m	java:S106`"+Replace this use of System.out by a logger.(æºË8Ê•ÀÊå1J$716125c7-3838-45ad-994a-d852f14b7e3c
-x
-java:S1611g"5Remove the parentheses around the "element" parameter(ˆ½ê¡8…·ÇÊå1J$8eeeac69-1857-4cb8-a5e1-7c796147e29a
-
-java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 92 to 64, Complexity from 19 to 14, Nesting Level from 5 to 2, Number of Variables from 17 to 6.(¾³÷ùÿÿÿÿ8Í•ÀÊå1J$f0352ff2-4305-451d-ac29-2a300103a55b
+W
+java:S1141'"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Äûšóå1
+ˆ
+java:S1488u"fImmediately return this expression instead of assigning it to the temporary variable "responseReader".(–ÓšÓûÿÿÿÿ8Èûšóå1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(è¦ú×8Ğûšóå1
+l
+java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(¿ûÃ³şÿÿÿÿ8ˆ“›óå1
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¾³÷ùÿÿÿÿ8Ÿ“›óå1
+\
+java:S6213#":Rename this variable to not match a restricted identifier.(Ê›õªüÿÿÿÿ8÷“›óå1
+=	java:S131,""Add a default case to this switch.(É­°!8€”›óå1
+L	java:S106\"+Replace this use of System.out by a logger.(ğ¢Õîùÿÿÿÿ8‡”›óå1
+G	java:S106b"+Replace this use of System.out by a logger.(æºË8ˆ”›óå1
+R
+java:S1611i"5Remove the parentheses around the "element" parameter(ˆ½ê¡8‰”›óå1
+è
+java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 92 to 64, Complexity from 19 to 14, Nesting Level from 5 to 2, Number of Variables from 17 to 6.(¾³÷ùÿÿÿÿ8–”›óå1

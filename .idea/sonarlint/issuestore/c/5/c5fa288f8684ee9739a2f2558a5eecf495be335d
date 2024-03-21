@@ -1,0 +1,11 @@
+
+e
+java:S1118"Hide this public constructor.(„…¼¢ûÿÿÿÿ8õëóòå1J$bb788098-777b-4d15-ad80-58db29ed70a7
+k
+java:S3010"#Remove this assignment of "reader".(âŠä‚ùÿÿÿÿ8Æ­›òå1J$4dfea178-b0e5-43bc-b7c6-a66119e901a5
+}
+java:S2209"5Change this instance-reference to a static reference.(âŠä‚ùÿÿÿÿ8Ï­›òå1J$9b3fb4e9-3ea9-4dab-b2f5-8168971f81a1
+¬
+java:S1128"dRemove this unused import 'com.workshop.workshopmaven.reader.services.readerFiles.ReaderCsvService'.(££‡Ñıÿÿÿÿ8‡ìóòå1J$d557abc4-12cd-4333-b03f-004cb3a6b82f
+­
+java:S1128"eRemove this unused import 'com.workshop.workshopmaven.reader.services.readerFiles.ReaderXlsxService'.(‰±Áºøÿÿÿÿ8‰ìóòå1J$0b2a4d7a-76ee-4ec6-b7be-0958d60e8aaf

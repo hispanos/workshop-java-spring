@@ -13,4 +13,6 @@ public abstract class Reader {
 
     public abstract ResponseReader readerFile(String urlFile) throws IOException;
 
+    public abstract String getType();
+
 }

@@ -12,14 +12,14 @@ public class ReaderService {
 
     public ResponseReader processFile(String urlFile) {
         String fileType = urlFile.substring(urlFile.lastIndexOf(".") + 1);
-        readerServices = new MapFiles().getReaderService(fileType);
+        readerServices = MapFiles.getReaderService(fileType);
         if (readerServices == null) {
             throw new FileException("File type not supported");
         }
         try {
             return readerServices.readerFile(urlFile);
         } catch (Exception e) {
-            throw new FileException("Ocurred a problem reading the file");
+            throw new FileException("Ocurred a problem reading the file" + e.getMessage());
         }
     }
 

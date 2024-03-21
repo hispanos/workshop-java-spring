@@ -5,6 +5,7 @@ import com.workshop.workshopmaven.reader.model.XlsxModel;
 import com.workshop.workshopmaven.reader.services.Reader;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.springframework.stereotype.Service;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+@Service
 public class ReaderXlsxService extends Reader {
     @Override
     public ResponseReader readerFile(String urlFile) throws IOException {
@@ -114,5 +116,10 @@ public class ReaderXlsxService extends Reader {
         fis.close();
         ResponseReader responseReader = new ResponseReader(this.validLines, this.invalidLines);
         return responseReader;
+    }
+
+    @Override
+    public String getType() {
+        return "xlsx";
     }
 }
