@@ -1,19 +1,15 @@
 
-W
-java:S1141'"5Extract this nested try block into a separate method.(΅»Άόωÿÿÿÿ8Δϋσε1
-
-java:S1488u"fImmediately return this expression instead of assigning it to the temporary variable "responseReader".(–ΣΣϋÿÿÿÿ8Θϋσε1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(θ¦ϊΧ8Πϋσε1
-l
-java:S2095"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(ΏϋΓ³ώÿÿÿÿ8“›σε1
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ύ³χωÿÿÿÿ8“›σε1
-\
-java:S6213#":Rename this variable to not match a restricted identifier.(Κ›υªόÿÿÿÿ8χ“›σε1
-=	java:S131,""Add a default case to this switch.(Ι­°!8€”›σε1
-L	java:S106\"+Replace this use of System.out by a logger.(πΆΥξωÿÿÿÿ8‡”›σε1
-G	java:S106b"+Replace this use of System.out by a logger.(ζΊΛ8”›σε1
-R
-java:S1611i"5Remove the parentheses around the "element" parameter(½κ΅8‰”›σε1
-θ
-java:S6541"ΕA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 92 to 64, Complexity from 19 to 14, Nesting Level from 5 to 2, Number of Variables from 17 to 6.(Ύ³χωÿÿÿÿ8–”›σε1
+}
+java:S11413"5Extract this nested try block into a separate method.(΅»Άόωÿÿÿÿ8«™µζ1J$9c6e8f51-a28a-4d7c-af93-57b0e3682705
+―
+java:S1488…"fImmediately return this expression instead of assigning it to the temporary variable "responseReader".(–ΣΣϋÿÿÿÿ8®™µζ1J$f61a3a74-06fd-4109-b0f7-957c46daa2a0
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(θ¦ϊΧ8°™µζ1J$ae43dac8-3687-4f99-9695-1b1ee5f0e0c1
+
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(²¦Μ‹ώÿÿÿÿ8Ή™µζ1J$d10600bb-f493-4789-8686-873c894786c4
+‚
+java:S6213/":Rename this variable to not match a restricted identifier.(Κ›υªόÿÿÿÿ8Λ™µζ1J$11d274d7-924e-4e3e-8646-80c6e67ff5ae
+c	java:S1318""Add a default case to this switch.(Ι­°!8Ν™µζ1J$ce6230eb-36fd-4a80-b99f-58ddd57d444d
+x
+java:S1611u"5Remove the parentheses around the "element" parameter(½κ΅8Υ™µζ1J$c62ddc35-180e-4eb4-a64e-6eadbb4055ac
+
+java:S6541"ΖA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 106 to 64, Complexity from 19 to 14, Nesting Level from 5 to 2, Number of Variables from 20 to 6.(²¦Μ‹ώÿÿÿÿ8Ϋ™µζ1J$5c3feb90-2d9d-4e52-839f-a43a1498798e

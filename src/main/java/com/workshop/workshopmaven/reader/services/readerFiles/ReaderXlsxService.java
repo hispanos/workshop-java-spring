@@ -1,5 +1,6 @@
 package com.workshop.workshopmaven.reader.services.readerFiles;
 
+import com.workshop.workshopmaven.reader.exception.ReaderException;
 import com.workshop.workshopmaven.reader.model.ResponseReader;
 import com.workshop.workshopmaven.reader.model.XlsxModel;
 import com.workshop.workshopmaven.reader.services.Reader;
@@ -8,6 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Service;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -16,9 +18,19 @@ import java.util.List;
 @Service
 public class ReaderXlsxService extends Reader {
     @Override
-    public ResponseReader readerFile(String urlFile) throws IOException {
-        FileInputStream fis = new FileInputStream(urlFile);
-        Workbook workbook = new XSSFWorkbook(fis);
+    public ResponseReader readerFile(String urlFile) {
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(urlFile);
+        } catch (FileNotFoundException e) {
+            throw new ReaderException(e.getMessage());
+        }
+        Workbook workbook = null;
+        try {
+            workbook = new XSSFWorkbook(fis);
+        } catch (IOException e) {
+            throw new ReaderException(e.getMessage());
+        }
         Sheet sheet = workbook.getSheetAt(0);
         Iterator<Row> rows = sheet.iterator();
         CellValue cellValue = null;
@@ -89,13 +101,13 @@ public class ReaderXlsxService extends Reader {
                                 break;
                         }
                     } catch (IllegalStateException e) {
-                        System.out.println("Error en la fila " + rowIndex + ", celda " + cellIndex + ": " + e.getMessage());
+                        throw new ReaderException("Error en la celda " + cellIndex + " de la fila " + rowIndex + ": " + e.getMessage());
                     }
                 }
 
                 records.add(record);
             } catch (Exception e) {
-                System.out.println("Error en la fila " + rowIndex + ": " + e.getMessage());
+                throw new ReaderException("Error en la fila " + rowIndex + ": " + e.getMessage());
             }
 
             rowIndex++;
@@ -113,7 +125,11 @@ public class ReaderXlsxService extends Reader {
             }
         });
 
-        fis.close();
+        try {
+            fis.close();
+        } catch (IOException e) {
+            throw new ReaderException(e.getMessage());
+        }
         ResponseReader responseReader = new ResponseReader(this.validLines, this.invalidLines);
         return responseReader;
     }
